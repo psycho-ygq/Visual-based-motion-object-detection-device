@@ -39,6 +39,23 @@ My project introduces a motion object detection device based on computer vision.
 
 APP的代码在"APP.zip"文件中，解压后运行"project_APP.exe"即可，另需要确保您的电脑安装了MATLAB APP的GUI包。
 
+# 结果展示
+
+我们的装置可以实时显示物体的运动状态，包括偏转角度、各平面位置和自身位置等，可以实时在线的显示，视频帧率为大约为 15 FPS。结果显示如下图。
+
+![APP](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/84f23278-bfd2-498e-ab91-c8a8b7ad8f69)
+
+![result_1](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/441c7674-2d34-47a6-a034-d66f7084d704)
+
+![result_2](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/92885f3a-3ba8-4924-9f51-1dab23f29840)
+
+![result_3](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/632d135f-e5ec-4cf4-8dcd-1a005bc4b052)
+
+
+
+
+
+
 
 
 
