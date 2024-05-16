@@ -33,6 +33,12 @@ My project introduces a motion object detection device based on computer vision.
 
 "detect_final_1.m"和"detect_final_2.m"分别实现发挥部分的（1）和（2）。
 
+# APP
+
+另外，我做了一个基于MATLAB的APP实现我们装置的人机交互功能。
+
+APP的代码在"APP.zip"文件中，解压后运行"project_APP.exe"即可，另需要确保您的电脑安装了MATLAB APP的GUI包。
+
 
 
 
