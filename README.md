@@ -1,6 +1,13 @@
-# Visual-based-motion-object-detection-device (2023 年陕西省大学生电子设计竞赛七校联赛 C 题，运动物体监测系统)
+# Visual-based-motion-object-detection-device
+# (2023 年陕西省大学生电子设计竞赛七校联赛 C 题，运动物体监测系统)
 
-My project introduces a motion object detection device based on computer vision. For a hexahedron, the pose of the hexahedron can be detected, such as the position of each plane, and the motion trajectory of the object can be detected through a threshold segmentation algorithm.
+我的项目介绍了一种基于姿态检测的运动物体检测系统。
+1. 我可以展示它现在相对于水平面在各个轴（俯仰、旋转和翻滚轴）的静态姿态。
+2. 对于运动的物体，我可以根据连续变化的姿态解算出其运动/翻滚的路径，以及预测其在某个特定节点的姿态。
+3. 系统被封装在一个<10cm×10cm×10cm的黑盒内，不需要任何外部供电，可以通过蓝牙和WiFi跟外部PC端/移动端通信，最大有效通信距离大于10m。
+4. 我还设计了一个人机交互的APP来可视化这个系统的功能。
+   
+![image](https://github.com/user-attachments/assets/2769e038-b79f-4f63-8055-cce1d2d4c24c)
 
 # 一、任务
 设计并制作一个运动物体监测系统，系统包括1个运动物体和1个测量终端。运动物体内部包含传感器、无线通信和电源等电路；测量终端可采用手机、电脑或自制装置。显示终端接收来自运动物体的信息，并显示工作状态、倾斜角度、摆放姿态和移动路径等数据。监测系统的组成如图 1 所示，监测系统的测试板布置及倾斜角度测试示意如图 2 所示。
@@ -41,10 +48,17 @@ My project introduces a motion object detection device based on computer vision.
 APP的代码在"APP.zip"文件中，解压后运行"project_APP.exe"即可，另需要确保您的电脑安装了MATLAB APP的GUI包。
 
 # 结果展示
+我们将系统封装在一个黑盒中，可以实现自供电，数据通过蓝牙/WiFi传输到或者PC端或者移动端展示，最大有效传输距离>10m。
+
+![image](https://github.com/user-attachments/assets/2769e038-b79f-4f63-8055-cce1d2d4c24c)
 
 我们的装置可以实时显示物体的运动状态，包括偏转角度、各平面位置和自身位置等，可以实时在线的显示，视频帧率为大约为 15 FPS。结果显示如下图。
 
+在APP中，我们可以选择各个功能。
+
 ![APP](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/84f23278-bfd2-498e-ab91-c8a8b7ad8f69)
+
+下面简单地展示了物体运动时，物体当前的位置。
 
 ![result_1](https://github.com/psycho-ygq/Visual-based-motion-object-detection-device/assets/78340742/441c7674-2d34-47a6-a034-d66f7084d704)
 
